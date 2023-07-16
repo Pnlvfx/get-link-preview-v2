@@ -1,0 +1,41 @@
+{
+  "name": "get-link-preview",
+  "description": "Node function to get a preview from a url!",
+  "version": "2023.7.16",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsc -w --module commonjs --outDir dist/cjs & node --watch .",
+    "start": "node .",
+    "lint": "eslint ./src",
+    "build": "rimraf dist && yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn test && yarn lint"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-sonarjs": "^0.19.0",
+    "eslint-plugin-unicorn": "^48.0.0",
+    "prettier": "^3.0.0",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "html-metadata-parser": "^2.0.4"
+  }
+}
