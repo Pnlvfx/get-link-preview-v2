@@ -1,5 +1,5 @@
 {
-  "name": "get-link-preview",
+  "name": "get-link-preview-v2",
   "description": "Node function to get a preview from a url!",
   "version": "2023.7.16",
   "main": "./dist/cjs/index.js",
