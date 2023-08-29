@@ -34,7 +34,6 @@ module.exports = {
     'no-var': 'error',
     semi: 'error',
     indent: ['error', 2, { SwitchCase: 1 }],
-    'no-await-in-loop': 'error',
     'no-multi-spaces': 'error',
     'no-empty-function': 'error',
     'no-floating-decimal': 'error',
@@ -58,6 +57,5 @@ module.exports = {
 
     'unicorn/prevent-abbreviations': 'off',
     'unicorn/catch-error-name': 'off',
-    'unicorn/prefer-node-protocol': 'off',
   },
 };
